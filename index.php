@@ -16,7 +16,7 @@
 					<input type="radio" name="switch<?php echo $i;?>" value=1 checked>On
 				</label>
 				<label class="radio inline">
-					<input type="radio" name="switch<?php echo $i;?>" value=1>Off
+					<input type="radio" name="switch<?php echo $i;?>" value=0>Off
 				</label>
 				<br>
 			<?php endfor;?>
@@ -28,7 +28,7 @@
 					<input type="radio" name="switch<?php echo $i;?>" value=1 checked>On
 				</label>
 				<label class="radio inline">
-					<input type="radio" name="switch<?php echo $i;?>" value=1>Off
+					<input type="radio" name="switch<?php echo $i;?>" value=0>Off
 				</label>
 				<br>
 			<?php endfor;?>
