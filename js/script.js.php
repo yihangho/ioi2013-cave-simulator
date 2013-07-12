@@ -45,9 +45,9 @@ $(document).ready(function(){
 			$("button#submit").hide();
 		}
 		else
-			$("div#console").append("<p>"+first_not_match+"</p>");
-			$("div#console").animate({
-				scrollTop: $("div#console")[0].scrollHeight
-			}, "fast");
+			$("div#console").append("<p>"+(first_not_match+1)+"</p>");
+		$("div#console").animate({
+			scrollTop: $("div#console")[0].scrollHeight
+		}, "fast");
 	});
 });
