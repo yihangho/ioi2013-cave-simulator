@@ -10,7 +10,7 @@
 <body>
 	<div class="row">
 		<div class="span2 offset6">
-			<?php for ($i=1; $i<=8; $i++):?>
+			<?php for ($i=1; $i<=5; $i++):?>
 				Switch <?php echo $i;?>:<br>
 				<label class="radio inline">
 					<input type="radio" name="switch<?php echo $i;?>" value=1 checked>On
@@ -22,7 +22,7 @@
 			<?php endfor;?>
 		</div>
 		<div class="span2">
-			<?php for ($i=9; $i<=15; $i++):?>
+			<?php for ($i=6; $i<=10; $i++):?>
 				Switch <?php echo $i;?>:<br>
 				<label class="radio inline">
 					<input type="radio" name="switch<?php echo $i;?>" value=1 checked>On
@@ -33,7 +33,7 @@
 				<br>
 			<?php endfor;?>
 			<div>
-				Moves left: <span id="moves_left">75</span>
+				Moves left: <span id="moves_left">35</span>
 			</div>
 		</div>
 	</div>
