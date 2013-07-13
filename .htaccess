@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteBase /
+RewriteRule js/randomize.js js/randomize.js.php

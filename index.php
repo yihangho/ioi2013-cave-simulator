@@ -4,46 +4,27 @@
 	<meta charset="utf-8">
 	<title>Cave</title>
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/script.js.php"></script>
+	<script src="js/randomize.js"></script>
+	<script src="js/script.js"></script>
 	<link rel=stylesheet href=css/bootstrap.min.css>
+	<link rel=stylesheet href=css/switch.css>
+	<link rel=stylesheet href=css/style.css>
 </head>
 <body>
-	<div class="row">
-		<div class="span2 offset6">
-			<?php for ($i=1; $i<=5; $i++):?>
-				Switch <?php echo $i;?>:<br>
-				<label class="radio inline">
-					<input type="radio" name="switch<?php echo $i;?>" value=1 checked>On
-				</label>
-				<label class="radio inline">
-					<input type="radio" name="switch<?php echo $i;?>" value=0>Off
-				</label>
-				<br>
-			<?php endfor;?>
-		</div>
-		<div class="span2">
-			<?php for ($i=6; $i<=10; $i++):?>
-				Switch <?php echo $i;?>:<br>
-				<label class="radio inline">
-					<input type="radio" name="switch<?php echo $i;?>" value=1 checked>On
-				</label>
-				<label class="radio inline">
-					<input type="radio" name="switch<?php echo $i;?>" value=0>Off
-				</label>
-				<br>
-			<?php endfor;?>
-			<div>
-				Moves left: <span id="moves_left">35</span>
-			</div>
-		</div>
-	</div>
-	
-	<div class="row" style="margin-top: 10px;">
-		<div class="span4 offset6">
-			<button id="submit" class="btn btn-primary">Submit</button><button id="new_game" class="btn">New game</button>
-		</div>
+	<div id="switch-container" >
+		<?php for ($i=1; $i<=10; $i++):?>
+			<span class="toggle">
+				<input type="checkbox" id="switch<?php echo $i;?>">
+				<label data-off="Up" data-on="Down"></label>
+			</span>
+		<?php endfor;?>
 	</div>
 
-	<div id="console" class="well" style="width: 90%; margin-left:auto;margin-right:auto;overflow-y:auto;max-height:100px;height:100px;s">
+	<div id="buttons-container">
+		<button id="submit" class="btn btn-primary">Submit</button>
+		<button id="new-game" class="btn">New game</button>
+	</div>
+
+	<div id="console" class="well"></div>
 </body>
 </html>

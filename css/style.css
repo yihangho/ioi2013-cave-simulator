@@ -1,0 +1,25 @@
+div#switch-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	width: 436px;
+}
+
+div#buttons-container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 169px;
+}
+
+div#console
+{
+	width: 90%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top: 10px;
+	overflow-y:auto;
+	max-height:250px;
+	height:250px
+}
