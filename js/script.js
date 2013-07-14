@@ -35,7 +35,7 @@ $(document).ready(function(){
 			scrollTop: $("div#console")[0].scrollHeight
 		}, "fast");
 		
-		if (!moves_left || first_not_match == 100){
+		if (!moves_left || first_not_match == -1){
 			$("button#submit").hide();
 		}
 	});
