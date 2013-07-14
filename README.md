@@ -1,6 +1,9 @@
 #IOI 2013 Cave Simulator
 This is a simulator for the Cave problem that appeared in IOI 2013. The original problem statement can be found [here](http://www.ioi2013.org/wp-content/uploads/tasks/day2/cave/cave.pdf "Cave"). 
 
+##Acknowledgement
+Thanks to Shien Jin for giving UI feedbacks and suggestions!
+
 ##License
 The MIT License (MIT)
 
