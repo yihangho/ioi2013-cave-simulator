@@ -11,19 +11,19 @@ $(document).ready(function(){
 	
 	$("button#submit").click(function(){
 		moves_left--;
-		var first_not_match = 100;
+		var first_not_match = -1;
 		var switch_state = new Array();//Is only used for display purpose
 		for (var i=0; i<10; i++) {
 			switch_state.push(getSwitchState(i+1));
 			//random_bit[i] is the correct bit for door i
 			//arr[i] is the correct switch for door i
-			if (getSwitchState(arr[i]+1) != random_bit[i] && first_not_match == 100) {
+			if (getSwitchState(arr[i]+1) != random_bit[i] && first_not_match == -1) {
 				first_not_match = i+1;
 			}
 		}
 		$("div#console").append("<p>Switches are: "+JSON.stringify(switch_state)+"</p>");
 		
-		if (first_not_match == 100) {
+		if (first_not_match == -1) {
 			$("div#console").append("<p>Congrats, you have opened all the doors.</p>");
 		} else {
 			$("div#console").append("<p>Doors up to (but not including) "+first_not_match+" are open. Door "+first_not_match+" is closed.");
